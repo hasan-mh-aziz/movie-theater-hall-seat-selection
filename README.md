@@ -17,6 +17,7 @@ The algorithm follows the following steps-
     Tries to assign seats by keeping the whole group together. It finds the continuous range of seats in the same row equal to the reservation size with the maximum sum of seat weights in that range.
   </li>
   <li>If the algorithm cannot assign the whole group together, then it looks over all the available ranges and finds out the ranges with the maximum sum of seat weights in the ranges. It prioritizes keeping as many people as together over making one person a lone wolf. For example, for a request of 5, it will mostly assign 4 people together and another person alone instead of assigning them into two groups of 3 and 2.</li>
+  <li>After successful seat assignment, the algorithm blocks the buffer seats so that those seats cannot be assigned to future reservation requests.</li>
 </ol>
 
 ## How to run project
@@ -27,8 +28,8 @@ You would need to be in the same directory to the `main.py` to run the script. A
 <ol>
   <li>Right now, the theater hall is always 10 * 20. But that can be changed easily while creating movie theater objects. So, support for taking the dimension of the movie theater in arguments can be added. </li>
   <li>Support for movie theaters having more than 26 rows. </li>
-  <li>Support for requests with reservation size exceeding the number of seats in a row </li>
+  <li>Support for requests with reservation size exceeding the number of seats in a row. </li>
   <li>Support for reservations change. </li>
-  <li>Support for dynamic group size over assigning as many as people together</li>
+  <li>Support for dynamic group size over assigning as many as people together.</li>
 </ol>
   
