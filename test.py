@@ -11,7 +11,6 @@ def main(argv):
     try:
         output_contents = []
         with open(input_file_path, "r") as f:
-            # Reads each line and assign the seats accordingly.
             for line in f:
                 input_parts = line.split(" ")
                 reservation_id, reservation_size = input_parts[0], int(input_parts[1])
@@ -34,5 +33,4 @@ def main(argv):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
-    # main(["D:\marquetteOneDrive\OneDrive - Marquette University\Codes\pyCharmProjects\MovieTheaterSeating\Files\input1.txt"])
+    main(["D:\marquetteOneDrive\OneDrive - Marquette University\Codes\pyCharmProjects\MovieTheaterSeating\Files\input1.txt"])
