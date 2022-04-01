@@ -31,5 +31,6 @@ You would need to be in the same directory to the `main.py` to run the script. A
   <li>Support for requests with reservation size exceeding the number of seats in a row. </li>
   <li>Support for reservations change. </li>
   <li>Support for dynamic group size over assigning as many as people together.</li>
+  <li>Bring balance between use less buffer seats, and customer satisfaction. </li>
 </ol>
   
